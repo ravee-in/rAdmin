@@ -10,6 +10,16 @@ li.nav-item {
     display: flex;
     align-items: center;
 }
-.contentArea{
-    flex: 5;
+.viewBtn{
+    color:  green;
+    cursor: pointer;
+    font-size: 1.2rem !important;
+    margin: 0 3px;
+}
+.rAdmin_PBTN {
+    width: 100%;
+    border-radius: 0;
+    background: deepskyblue;
+    border: none;
+    padding: 10px 25px;
 }

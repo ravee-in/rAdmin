@@ -1,0 +1,7 @@
+.transactionWrap {
+  flex: 4;
+  margin: 15px;
+}
+.transactionDelete {
+  cursor: pointer;
+}

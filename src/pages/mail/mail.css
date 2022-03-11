@@ -1,0 +1,26 @@
+.mailContainer {
+  display: flex;
+  flex: 4;
+  margin: 25px;
+}
+.mailContainer .sidebar {
+  flex: 1 1;
+}
+.mailBody {
+  flex: 4;
+}
+
+.composeMailWrap {
+  padding: 15px;
+  margin: 0 15px;
+}
+.mailBoxInput {
+  border: none;
+  width: 100%;
+  /* height: 30px; */
+  padding: 10px 15px;
+  border-bottom: 1px solid gray;
+}
+.SentMails {
+    height: 100%;
+}

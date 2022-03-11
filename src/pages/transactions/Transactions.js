@@ -1,43 +1,43 @@
-import "./userList.css";
-import { DataGrid } from '@material-ui/data-grid';
+import './transaction.css'
+import { DataGrid } from "@material-ui/data-grid";
 import { DeleteOutline } from "@material-ui/icons";
-import { userRows } from "../../dummyData";
+import { transactionsData } from "../../dummyData";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-export default function UserList(props) {
-    const [data, setData] = useState(userRows);
+const Transactions = () => {
+    const [data, setData] = useState(transactionsData);
 
     const handleDelete = (id) => {
         setData(data.filter((item) => item.id !== id));
     };
 
-
     const columns = [
-        { field: "id", headerName: "ID", flex: 0.5 },
+        { field: "id", headerName: "ID" },
         {
-            field: "user",
-            headerName: "User",
+            field: "c_name",
+            headerName: "Customer",
             flex: 1,
             renderCell: (params) => {
                 return (
-                    <div className="userListUser">
-                        <img className="userListImg" src={params.row.avatar} alt="" />
-                        {params.row.username}
+                    <div className="productListItem">
+                        <img className="productListImg" src={params.row.c_img} alt="" />
+                        {params.row.c_name}
                     </div>
                 );
             },
         },
-        { field: "email", headerName: "Email", width: 200 },
+        { field: "price", headerName: "Amount", width: 200 },
         {
             field: "status",
             headerName: "Status",
             flex: 1,
         },
         {
-            field: "transaction",
-            headerName: "Transaction Volume",
+            field: "date",
+            headerName: "Date",
             flex: 1,
+
         },
         {
             field: "action",
@@ -46,11 +46,8 @@ export default function UserList(props) {
             renderCell: (params) => {
                 return (
                     <>
-                        <Link to={"/user/" + params.row.id}>
-                            <button className="userListEdit btn btn-sm">Edit</button>
-                        </Link>
                         <DeleteOutline
-                            className="userListDelete"
+                            className="transactionDelete text-danger"
                             onClick={() => handleDelete(params.row.id)}
                         />
                     </>
@@ -60,15 +57,16 @@ export default function UserList(props) {
     ];
 
     return (
-        <div className="userList">
+        <div className="productList">
             <DataGrid
                 rows={data}
                 disableSelectionOnClick
                 columns={columns}
-                pageSize={10}
-                rowsPerPageOptions={[10]}
+                pageSize={8}
                 checkboxSelection
             />
         </div>
     );
 }
+
+export default Transactions

@@ -1,26 +1,28 @@
 .sidebar {
-    flex: 1;
+    flex: 1 1;
     height: calc(100vh - 50px);
-    background-color: rgb(251, 251, 255);
     position: sticky;
     top: 50px;
-  }
+    padding: 15px 10px;
+}
 li.sidebarListItem:hover {
-    background: #adb5bd;
+    background: #eeeef7;
     border-radius: 5px;
 }
 li.sidebarListItem {
-    padding: 5px 10px;
+    padding: 0px 15px;
     margin: 5px 15px;
     cursor: pointer;
     font-size: 0.8rem;
     display: flex;
     align-items: center;
 }
-.sidebarListItem a{
+.sidebarListItem a {
     text-decoration: none;
     color: rgb(33, 37, 41);
     margin-left: 5px;
+    width: 100%;
+    padding: 10px 0;
 }
 ul.sidebarList {
     list-style: none;
@@ -32,10 +34,13 @@ h3.siebarTitle {
     color: #adb5bd;
 }
 li.sidebarListItem.active{
-    background: #adb5bd;
+    background: #eeeef7;
     border-radius: 5px;
 }
 .seprator{
     border-bottom: 1px solid adb5bd;
     margin: 15px;
+}
+.userUpdateInput:focus-visible {
+    outline: none;
 }

@@ -1,0 +1,9 @@
+a#userProfile {
+    display: flex;
+    align-items: center;
+}
+ul.userProfile_Menu {
+    left: -120px !important;
+    top: 65px;
+    border-radius: 0;
+}
