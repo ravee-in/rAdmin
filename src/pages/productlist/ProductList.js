@@ -16,7 +16,7 @@ const ProductList = () => {
         { field: "id", headerName: "ID" },
         {
             field: "product",
-            headerName: "Product",flex: 1,
+            headerName: "Product",flex: 2,
             renderCell: (params) => {
                 return (
                     <div className="productListItem">
@@ -26,7 +26,7 @@ const ProductList = () => {
                 );
             },
         },
-        { field: "stock", headerName: "Stock", width: 200 },
+        { field: "stock", headerName: "Stock", width: 100 },
         {
             field: "status",
             headerName: "Status",

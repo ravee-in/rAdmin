@@ -172,6 +172,7 @@ export const productRows = [
     id: 1,
     img: "https://guesseu.scene7.com/is/image/GuessEU/M63H24W7JF0-L302-ALTGHOST?wid=1500&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
     name: "CHECK PRINT SHIRT",
+    stock: "67",
     price: '$110',
     status: "active"
   },
@@ -179,6 +180,7 @@ export const productRows = [
     id: 2,
     img: "https://guesseu.scene7.com/is/image/GuessEU/FLGLO4FAL12-BEIBR?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
     name: "GLORIA HIGH LOGO SNEAKER",
+    stock: "99",
     price: '$91',
     status: "active"
   },
@@ -186,6 +188,7 @@ export const productRows = [
     id: 3,
     img: "https://guesseu.scene7.com/is/image/GuessEU/HWVG6216060-TAN?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
     name: "CATE RIGID BAG",
+    stock: "103",
     price: '$94.5',
     status: "active"
   },
@@ -193,6 +196,7 @@ export const productRows = [
     id: 4,
     img: "http://guesseu.scene7.com/is/image/GuessEU/WC0001FMSWC-G5?wid=520&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
     name: "GUESS CONNECT WATCH",
+    stock: "99",
     price: '$438.9',
     status: "active"
   },
@@ -200,6 +204,7 @@ export const productRows = [
     id: 5,
     img: "https://guesseu.scene7.com/is/image/GuessEU/AW6308VIS03-SAP?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
     name: "'70s RETRO GLAM KEFIAH",
+    stock: "167",
     price: '$20',
     status: "active"
   }

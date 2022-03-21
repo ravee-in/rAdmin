@@ -49,12 +49,12 @@ const Topbar = () => {
                                 <Avatar alt="Travis Howard" src="/images/2.jpg" />
                             </a>
 
-                            <ul class="dropdown-menu userProfile_Menu bg-light" aria-labelledby="userProfile">
-                                <li><a class="dropdown-item disabled" href="#">Hello, User</a></li>
+                            <ul className="dropdown-menu userProfile_Menu bg-light" aria-labelledby="userProfile">
+                                <li><a className="dropdown-item disabled" href="#">Hello, User</a></li>
                                 <hr className="seprator" />
-                                <li><a class="dropdown-item" href="#"><Person /> Profile</a></li>
-                                <li><a class="dropdown-item" href="#"><Settings /> Settings</a></li>
-                                <li><a class="dropdown-item" href="#" onClick={handleLogout}><ExitToApp /> Log Out?</a></li>
+                                <li><a className="dropdown-item" href="#"><Person /> Profile</a></li>
+                                <li><a className="dropdown-item" href="#"><Settings /> Settings</a></li>
+                                <li><a className="dropdown-item" href="#" onClick={handleLogout}><ExitToApp /> Log Out?</a></li>
                             </ul>
                         </li>
                     </ul>

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./product.css";
 import Chart from "../../components/chart/Chart"
-import {productData} from "../../dummyData"
+import { productData } from "../../dummyData"
 import { Publish } from "@material-ui/icons";
 
 const Product = () => {
@@ -45,15 +45,36 @@ const Product = () => {
             <div className="productBottom bg-light">
                 <form className="productForm">
                     <div className="productFormLeft">
-                        <label>Product Name</label>
-                        <input type="text" placeholder="Apple AirPod" />
-                        <label>In Stock</label>
-                        <select name="inStock" id="idStock">
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                        </select>
+                        <div className="row mb-3">
+                            <div className="col">
+                                <label>Product Name</label>
+                                <input type="text" placeholder="Apple AirPod" className="form-control" />
+                            </div>
+                            <div className="col">
+                                <label>Category</label>
+                                <select name="pCategory" id="pCategory" className="form-control">
+                                    <option>.....</option>
+                                    <option>......</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div className="row mb-3">
+                            <div className="col">
+                                <label>In Stock</label>
+                                <select name="inStock" id="idStock" className="form-control">
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                            <div className="col">
+                                <label>Quantity</label>
+                                <input type="number" placeholder="Stock in Numbers" className="form-control" min={0}/>
+                            </div>
+                        </div>
+
+
                         <label>Active</label>
-                        <select name="active" id="active">
+                        <select name="active" id="active" className="form-control">
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                         </select>
